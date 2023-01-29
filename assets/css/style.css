@@ -29,6 +29,11 @@
 
 .login-center > .image-login > .login > .login-user {
     margin-top: 60px;
+    display: flex;
+}
+
+.login-center > .image-login > .login > .login-user img {
+
 }
 
 .login-center > .image-login > .login > .login-user > input {
@@ -51,5 +56,10 @@
 .github-name {
     width: 6.5rem;
     height: 2.5rem;
-    border: 2px solid red;
+}
+
+.image-name-logo {
+    display: flex;
+    justify-content: right;
+    width: 100%;
 }
