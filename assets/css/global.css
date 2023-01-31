@@ -171,3 +171,17 @@ main {
     border-radius: 5px;
     background: linear-gradient(90deg, rgba(60,60,60,0.2) 0%, rgba(14,97,51) 100%);
 }
+
+.square7 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #2fb54a;
+}
+
+.square8 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #42d35c;
+}

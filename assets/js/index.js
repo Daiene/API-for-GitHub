@@ -1,3 +1,4 @@
+//Abre modal com as informações do GitHub usando a API
 const user = document.querySelector(".user");
 const button = document.querySelector(".button");
 const modal = document.querySelector("dialog");
