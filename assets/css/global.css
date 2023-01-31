@@ -141,7 +141,7 @@ main {
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    animation: yourAnimation 4s linear 0s infinite normal none;
+    animation: yourAnimation 2s linear 0s infinite normal none;
 }
 
 .square3 {
