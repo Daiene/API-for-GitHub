@@ -1,11 +1,26 @@
 dialog {
-    margin: 0 auto;
-    width: 700px;
-    height: 700px;
+    color: #F8F8F8;
+    margin: 20px auto;
+    width: 45%;
+    height: 100vh;
     z-index: 1;
-    background-color: lightgray;
+    background-color: rgb(6, 49, 12);
     box-shadow: 0 0 1em rgba(0,0,0,0.3);
     text-align: center;
+    border: none;
+    overflow-y: scroll;
+    border: 3px solid rgb(71, 212, 90);
+    border-radius: 5px;
+}
+
+dialog::-webkit-scrollbar {
+    width: 15px;
+    border: none
+}
+
+dialog::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 6px;
 }
 
 .modal-close {
@@ -17,14 +32,14 @@ dialog {
     font-size: 25px;
 }
 
-
-
 .modal-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.modal-content img {
-    margin: 70px 0 70px;
+dialog img {
+    max-width: 40%;
+    border-radius: 50%;
+    border: 3px solid rgb(71, 212, 90);
 }
