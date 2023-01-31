@@ -134,7 +134,7 @@ main {
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    background-color: #0e6133;
+    background-color: rgba(14, 97, 51, 0.4);
 }
 
 .square2 {
@@ -148,40 +148,26 @@ main {
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    background: linear-gradient(90deg, rgba(14,97,51) 0%, rgba(60,60,60,0.2) 100%);
-}
-
-.square4 {
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    background: linear-gradient(90deg, rgba(91,95,99) 0%, rgba(60,60,60,0.1) 100%);
+    background: linear-gradient(90deg, rgba(14,97,51, 0.4) 0%, rgba(0,0,0) 100%);
 }
 
 .square5 {
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    background: linear-gradient(90deg, rgba(60,60,60,0.1) 0%, rgba(91,95,99) 100%);
-}
-
-.square6 {
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    background: linear-gradient(90deg, rgba(60,60,60,0.2) 0%, rgba(14,97,51) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0) 0%, rgba(14,97,51, 0.4) 190%);
 }
 
 .square7 {
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    background-color: #2fb54a;
+    background-color: rgba(47,181,74,0.5);
 }
 
 .square8 {
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    background-color: #42d35c;
+    background-color: rgba(66,211,92,0.7);
 }

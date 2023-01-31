@@ -14,10 +14,10 @@
 }
 
 .login-center>.image-login>.github-logo {
-    width: 13rem;
-    height: 7rem;
+    width: 19rem;
+    height: 10rem;
     position: absolute;
-    top: -60px;
+    top: -80px;
 }
 
 .login-center>.image-login>.login {
@@ -69,12 +69,14 @@
 }
 
 .github-name {
-    width: 6.5rem;
-    height: 2.5rem;
+    width: 7.5rem;
+    height: 3rem;
 }
 
 .image-name-logo {
+    bottom: 0;
     display: flex;
     justify-content: right;
     width: 100%;
+    position: absolute;
 }

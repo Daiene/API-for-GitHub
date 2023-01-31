@@ -1,15 +1,13 @@
 dialog {
     color: #F8F8F8;
-    margin: 20px auto;
-    width: 45%;
+    background-color: transparent;
+    margin: 18px auto;
+    width: 500px;
     height: 100vh;
     z-index: 1;
-    background-color: rgb(6, 49, 12);
-    box-shadow: 0 0 1em rgba(0,0,0,0.3);
     text-align: center;
     border: none;
     overflow-y: scroll;
-    border: 3px solid rgb(71, 212, 90);
     border-radius: 5px;
 }
 
@@ -42,4 +40,9 @@ dialog img {
     max-width: 40%;
     border-radius: 50%;
     border: 3px solid rgb(71, 212, 90);
+}
+
+dialog > .informacoes {
+    border: 3px solid rgb(71, 212, 90);
+    background-color: black;
 }
