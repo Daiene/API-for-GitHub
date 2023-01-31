@@ -19,41 +19,43 @@ button.addEventListener("click", () => {
         <div class="informacoes">
             <img class="perfil" src="${responseJson.avatar_url}" alt="" />
             <h1>${responseJson.name}</h1>
-            <p><img src="/images/localizacao/logo-local.jpg">${responseJson.location}</p>
+            <div class="location">
+                <img class="local-icon" src="assets/images/localizacao/local.png">
+                <p>${responseJson.location}</p>
+            </div>
             <p>${responseJson.bio}</p>
+            <button onclick="showRepositories()" class="button-repository">View Repository</button>
         </div>
     `)
         })
 
-    buttonRepository.addEventListener("click", () => {
-        fetch(`https://api.github.com/users/${inputValue}/repos`)
-            .then(function (response) { return response.json(); })
-            .then(function (responseJson) {
-                responseJson.map(repository => modal.insertAdjacentHTML("beforeend", `
-                    <div class="repositorio">
-                        <h2>${repository.name}</h2>
-                        <a 
-                        href="${repository.html_url}"     
-                        target="_blank">
-                        Ver código
-                        </a>
-                    </div>`
-                ))
-            })
-    })
+})
 
-    modal.addEventListener('click', event => {
-        const nomeDaClasseDoElementoClicado = event.target.classList[0];
-        const classNames = ['modal-close'];
-        const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+function showRepositories() {
+    const inputValue = user.value;
+    fetch(`https://api.github.com/users/${inputValue}/repos`)
+        .then(function (response) { return response.json(); })
+        .then(function (responseJson) {
+            responseJson.map(repository => modal.insertAdjacentHTML("beforeend", `
+                <div class="repositorio">
+                    <h2>${repository.name}</h2>
+                    <p>< / > ${repository.language}</p>
+                    <a class="button-code" href="${repository.html_url}" target="_blank">See Code</a>
+                </div>`
+            ))
+        })
+}
 
-        if (DeveFecharModal) {
-            modal.close();
-            window.location.reload(true);
-        }
+modal.addEventListener('click', event => {
+    const nomeDaClasseDoElementoClicado = event.target.classList[0];
+    const classNames = ['modal-close'];
+    const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
 
-        user.value = "";
-        user.focus();
-    })
+    if (DeveFecharModal) {
+        modal.close();
+        window.location.reload(true);
+    }
 
+    user.value = "";
+    user.focus();
 })
