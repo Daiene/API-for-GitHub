@@ -7,4 +7,167 @@
 
 html {
     background-color: black;
+    position: relative;
+}
+
+main {
+    height: 80vh;
+}
+
+@keyframes yourAnimation{
+    0% {
+        background-color: #0e6133;
+    }
+    25% {
+        background-color: #42d35c;
+    }
+    50% {
+        background-color: #c3c6c8;
+    }
+    75% {
+        background-color: #2fb54a;
+    }
+    100% {
+        background-color: #1a6429;
+    }
+}
+
+
+
+.line-backgroung-square {
+    margin-top: -35px;
+    margin-left: -35px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square2 {
+    margin-top: 50px;
+    margin-left: -35px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square3 {
+    margin-top: 135px;
+    margin-left: -35px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square4 {
+    margin-top: 220px;
+    margin-left: -35px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square5 {
+    margin-top: 305px;
+    margin-left: -35px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square6 {
+    bottom: 305px;
+    right: -35px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square7 {
+    bottom: 220px;
+    right: -35px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square8 {
+    bottom: 135px;
+    right: -35px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square9 {
+    bottom: 50px;
+    right: -35px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 15px;
+    position: absolute;
+}
+
+.line-backgroung-square10 {
+    bottom: -35px;
+    right: -35px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    z-index: -1;
+    gap: 15px;
+    position: absolute;
+}
+
+.square1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #0e6133;
+}
+
+.square2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    animation: yourAnimation 4s linear 0s infinite normal none;
+}
+
+.square3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(14,97,51) 0%, rgba(60,60,60,0.2) 100%);
+}
+
+.square4 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(91,95,99) 0%, rgba(60,60,60,0.1) 100%);
+}
+
+.square5 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(60,60,60,0.1) 0%, rgba(91,95,99) 100%);
+}
+
+.square6 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(60,60,60,0.2) 0%, rgba(14,97,51) 100%);
 }
