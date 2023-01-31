@@ -17,6 +17,7 @@ button.addEventListener("click", () => {
         <div class="informacoes">
             <img src="${responseJson.avatar_url}" alt="" />
             <h1>${responseJson.name}</h1>
+            <p>${responseJson.location}</p>
             <p>${responseJson.bio}</p>
         </div>
     `)
