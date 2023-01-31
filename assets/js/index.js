@@ -36,14 +36,20 @@ button.addEventListener("click", () => {
         </div>`
             ))
         })
-})
 
-modal.addEventListener('click', event => {
-    const nomeDaClasseDoElementoClicado = event.target.classList[0];
-    const classNames = ['modal-close'];
-    const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+    modal.addEventListener('click', event => {
+        const nomeDaClasseDoElementoClicado = event.target.classList[0];
+        const classNames = ['modal-close'];
+        const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
 
-    if (DeveFecharModal) {
-        modal.close();
-    }
+        modal.insertAdjacentHTML("beforebegin", ``);
+
+        if (DeveFecharModal) {
+            modal.close();
+        }
+
+        user.value = "";
+        user.focus();
+    })
+
 })
