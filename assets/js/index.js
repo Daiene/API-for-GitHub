@@ -42,10 +42,9 @@ button.addEventListener("click", () => {
         const classNames = ['modal-close'];
         const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
 
-        modal.insertAdjacentHTML("beforebegin", ``);
-
         if (DeveFecharModal) {
             modal.close();
+            window.location.reload(true);
         }
 
         user.value = "";
