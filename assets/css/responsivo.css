@@ -1,0 +1,136 @@
+@media (max-width: 931px) {
+
+    #square1,
+    #square9,
+    #square16,
+    #square22,
+    #square27,
+    #square34,
+    #square39,
+    #square45,
+    #square52,
+    #square60 {
+        display: none;
+    }
+}
+
+@media (max-width: 727px) {
+
+    #square2,
+    #square10,
+    #square17,
+    #square23,
+    #square28,
+    #square33,
+    #square38,
+    #square44,
+    #square51,
+    #square59 {
+        display: none;
+    }
+}
+
+@media (max-width: 598px) {
+
+    #square3,
+    #square11,
+    #square18,
+    #square24,
+    #square29,
+    #square32,
+    #square37,
+    #square43,
+    #square50,
+    #square58 {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    #square4,
+    #square12,
+    #square19,
+    #square25,
+    #square30,
+    #square31,
+    #square36,
+    #square42,
+    #square49,
+    #square57 {
+        display: none;
+    }
+
+    .login-center>.image-login {
+        padding: 25px;
+    }
+    
+    .login-center>.image-login>.github-logo {
+        width: 14rem;
+        height: 7rem;
+        top: -60px;
+    }
+
+    .login-center>.image-login>.login {
+        height: 200px;
+    }
+
+    .login-center>.image-login>.login>.login-user>.user::placeholder {
+        font-size: 13px;
+    }
+
+    .login-center>.image-login>.login>.login-user>input {
+        width: 175px;
+    }
+
+    .login-center>.image-login>.login>button, .button-repository {
+        width: 190px;
+        font-size: 12px;
+    }
+
+    .github-name {
+        width: 5.5rem;
+        height: 2rem;
+    }
+
+    .container-footer {
+        font-size: 12px;
+    }
+
+    .contact {
+        width: 170px;
+        height: 40px;
+    }
+
+    dialog {
+        margin: 20px auto;
+        width: 310px;
+    }
+
+    .modal-close {
+        top: 15px;
+        font-size: 21px;
+    }
+
+    dialog .perfil {
+        width: 150px;
+    }
+
+    .local-icon {
+        width: 15px;
+        height: 20px;
+    }
+
+    dialog > .informacoes > h1, .repositorio h2 {
+        font-size: 16px;
+    }
+
+    dialog > .informacoes > p, .location > p, .repositorio p {
+        font-size: 12px;
+    }
+
+    dialog > .repositorio > .button-code {
+        font-size: 12px;
+        padding: 5px 30px;
+    }
+}
