@@ -13,3 +13,5 @@ API for GitHub was born with the intention of bringing me knowledge about an API
 So the challenge was to create a custom interface with a LinkedIn theme, created by me. In it, we have a text box that will receive the user's username and clicking on the search button, it returns some information from GitHub, such as photo, name, location, biography and repositories.
 
 In addition to fulfilling the objective of learning what an API is and how to use it, I got to know Insomnia, which was of great value for the development of the JavaScript code for the API.
+
+It was worked with animated CSS for my custom theme and also with responsiveness, which was one of the biggest challenges in this case
