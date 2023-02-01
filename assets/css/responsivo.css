@@ -60,6 +60,10 @@
     #square57 {
         display: none;
     }
+    
+    main {
+        height: 80vh;
+    }
 
     .login-center>.image-login {
         padding: 25px;
