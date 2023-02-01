@@ -44,6 +44,7 @@
     #square58 {
         display: none;
     }
+    
 }
 
 @media (max-width: 420px) {
@@ -60,7 +61,9 @@
     #square57 {
         display: none;
     }
+}
 
+@media (max-width: 598px), (max-width: 420px) {
     .login-center>.image-login {
         padding: 25px;
     }
